@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #b7cceb;
+            color: #0a0101;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            overflow: hidden;
+            padding-left: 10%;
+            /* Adjusted padding for responsiveness */
+        }
+    .footer{
+        background-color: #b7cceb ;
+        color: #0a0101;
+    }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        nav .dropdown {
+            display: inline-block;
+        }
+
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Additional styles for better presentation */
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .c20 {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .subjects-container {
+            display: none;
+        }      
+    
+        .img{
+            display: flex;
+            padding: 0 50px;
+            
+        }
+        .header{
+            display: flex;
+        
+        }
+        .header img{
+            border-radius: 10px;
+        }
+        h1{
+            margin-left: 350PX;
+        }
+        .marquee {
+            font-size: 30pt;
+            color: #ff4444;
+        }
+        #img {
+            margin-right: 50px;
+            
+        }
+        
+            .aboutit {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9; /* Light gray background */
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .text, .border {
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .aboutit2 {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-left: 10px;
+            background-color: #f9f9f9; /* Light gray background */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        #img1 {
+            margin-left: 50px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+
+    <header>
+        
+        <div class="header">
+            <div class="img">
+                <img src="./images/img6.jpg" alt="College Logo" width="100" height="100">
+            </div>
+            <h1>Computer Engineering</h1>
+         </div>  
+    </header>
+
+    <nav>
+        <a href="./model.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Model paper</a>
+            <div class="dropdown-content">
+                <a href="./modalPapersPages/C16/CME/selectSem.html">c-16 Model papers</a>
+                <a href="./modalPapersPages/C20/cme/selectsem2.html">c-20 Model papers</a>
+            </div>
+        </div>
+        <a href="./quiz/cmequiz.html">Quiz</a>
+        <a href="#contact">Books</a>
+    </nav>
+
+    <main>
+        <marquee behavior="alternate" direction="" scrollamount="25" class="marquee">Welcome to Computer Engineering</marquee>
+        <div class="aboutit">
+            <div>
+                <img src="./images/img2.jpg" alt="College Logo" width="200" height="200" id="img">
+            </div>
+            <div class="border">
+                <div>
+                    <h5><a href="../project1/modalPapersPages/C16/CME/selectSem.html" style="color: #3366cc;">Download all C-16 scheme Computer Engineering model papers for free.</a></h5>
+                </div>
+                <div>
+                    <p>"Elevate your understanding and ace your exams with our Department of Computer Engineering's model papers. Unleash the power of preparation, download now! Knowledge is your key to success, grab it today!"</p>
+                </div>
+            </div>
+        </div>
+        <div class="aboutit2">
+            <div class="text border">
+                <h5><a href="../project1/modalPapersPages/C20/cme/selectsem2.html" style="color: #3366cc;">Download all c-20 scheme Computer Engineering model papers for free</a></h5>
+                <p class="text1">"Elevate your understanding and ace your exams with our Department of Mechanical Engineering's model papers. Unleash the power of preparation, download now! Knowledge is your key to success, grab it today!"</p>
+            </div>
+            <div>
+                <img src="./images/img3.jpg" alt="College Logo" width="205" height="200" id="img1">
+            </div>
+        </div>     
+        
+    </main>
+
+    <footer class="footer">
+        &copy; 2023 College Name. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

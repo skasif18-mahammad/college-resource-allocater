@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Semester Subjects</title>
+<script>
+function displaySubjects() {
+  var semester = document.getElementById("semester").value;
+  var subjectsDiv = document.getElementById("subjects");
+  subjectsDiv.innerHTML = ""; // Clear previous subjects
+
+  if (semester == "1") {
+    // Add subjects for semester 1
+    subjectsDiv.innerHTML += "<a href='subject1_link'>Mathematics</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject2_link'>English</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject3_link'>physics</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject4_link'>Chemistry</a><br>";
+    // ... Add more subjects for semester 1
+  } else if (semester == "3") {
+    // Add subjects for semester 3
+    subjectsDiv.innerHTML += "<a href='subject1_link'>DE</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject2_link'>Mathematics-II</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject3_link'>OS</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject4_link'>DS</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject5_link'>DBMS</a><br>";
+    
+    // ...
+  } else if (semester == "4") {
+
+    subjectsDiv.innerHTML += "<a href='subject1_link'>CO&MP</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject2_link'>Mathematics-III</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject3_link'>Web Tecvhnologies</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject4_link'>Oops through c++</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject5_link'>Computer Networks</a><br>";
+    // ...
+  } else if (semester == "5") {
+    
+    subjectsDiv.innerHTML += "<a href='#'>IME</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject2_link'>Java programming</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject3_link'>SC</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject4_link'>Iot</a><br>";
+    subjectsDiv.innerHTML += "<a href='subject5_link'>Python programming</a><br>";
+    // ...
+  } 
+}
+</script>
+</head>
+<body>
+  <select id="semester" onchange="displaySubjects()">
+    <option value="">Select Semester</option>
+    <option value="1">Semester 1</option>
+    <option value="3">Semester 3</option>
+    <option value="4">Semester 4</option>
+    <option value="5">Semester 5</option>
+  
+  </select>
+
+  <div id="subjects"></div>
+</body>
+</html>
